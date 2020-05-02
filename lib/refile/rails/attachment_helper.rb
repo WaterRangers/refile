@@ -112,7 +112,8 @@ module Refile
         multiple: options[:multiple],
         value: attacher_value.try(:to_json),
         object: object,
-        disabled: attacher_value.blank?,
+        #disabled: attacher_value.blank?,
+        disabled: false,
         id: nil,
         data: { reference: options[:data][:reference] }
       }
